@@ -1,6 +1,6 @@
 const express = require('express');
 const httpProxy = require('http-proxy');
-const port = 8080;
+const PORT = process.env.PORT || 8080;
 
 const apiProxy = httpProxy.createProxyServer();
 const serverOne = 'http://htlin.io/';  //serves mortgage calculator
@@ -32,7 +32,7 @@ app.all("/api/homes/:id/prices", function (req, res) {
 //   apiProxy.web(req, res, {target: serverFour});
 // });
 
-app.listen(port, () => {
-  console.log(`listening at ${port}`);
+app.listen(PORT, () => {
+  console.log(`listening at ${PORT}`);
 });
 

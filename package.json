@@ -8,7 +8,8 @@
     "node": ">=6.13.0"
   },
   "scripts": {
-    "start": "nodemon server/server.js"
+    "start": "PORT=80 node server/server.js",
+    "proxy": "node server/server.js"
   },
   "dependencies": {
     "express": "^4.16.4",
