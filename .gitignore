@@ -1,2 +1,12 @@
+.DS_Store
 node_modules
+bundle.js
+*.tsv
+*.log
+dbKey.js
 package-lock.json
+newrelicKey.js
+dist
+public/server.js
+public/server.js.map
+
